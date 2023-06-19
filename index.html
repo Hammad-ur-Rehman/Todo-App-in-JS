@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body {
+        text-align: center;
+    }
+
+    #todo-item {
+
+        height: 20px;
+        border:none;
+        outline: none;
+        font-size: 20px;
+
+    }
+
+    div input[type="text"]:focus {
+        
+        color: rgb(190, 152, 39);
+        border-bottom: 2px solid black !important;
+          
+    }
+
+    .addTodo {
+
+        cursor: pointer;
+        background-color: darkorange;
+        height: 25px;
+        width: 100px;
+
+    }
+
+    .btn {
+        background-color: red;
+        margin-left: 5px;
+        font-size: 16px;
+        height: 25px;
+        width: 100px;
+        cursor: pointer;
+    }
+
+    .editbtn1 {
+
+        background-color: lightgreen;
+        margin-left: 2px;
+        cursor: pointer;
+        height: 25px;
+        width: 100px;
+    }
+
+    .deleteall {
+
+        background-color: orangered;
+        cursor: pointer;
+        height: 25px;
+        width: 100px;
+
+    }
+
+    #list {
+
+        font-size: 22px;
+         display: flex;
+         justify-content: center;
+         align-items: center; 
+         flex-direction: column;       
+
+    }
+</style>
+
+<body>
+    <div>
+        <h1>Todo List</h1>
+        <input placeholder="Enter todo" type="text" id="todo-item">
+        <button onclick="addTodo()" class="addTodo">ADD ITEM</button>
+        <button onclick="deleteAll()" class="deleteall">DELETE ALL</button>
+    </div>
+
+    <div>
+        <ol id="list">
+
+        </ol>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
